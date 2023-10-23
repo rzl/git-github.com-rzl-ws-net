@@ -1,0 +1,25 @@
+{
+  "name": "ws-net",
+  "version": "1.0.0",
+  "description": "websocket server call client function",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rzl/ws-net.git"
+  },
+  "author": "rzl",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rzl/ws-net/issues"
+  },
+  "homepage": "https://github.com/rzl/ws-net#readme",
+  "dependencies": {
+    "ws": "^8.14.2"
+  },
+  "devDependencies": {
+    "@types/ws": "^8.5.8"
+  }
+}
