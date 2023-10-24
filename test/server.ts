@@ -1,13 +1,9 @@
 import { WebSocketServer } from 'ws';
+import { WsNetServer } from '../src/server/server';
 
 const wss = new WebSocketServer({ port: 8080 });
 
-wss.on('connection', function connection(ws) {
-  ws.on('error', console.error);
 
-  ws.on('message', function message(data) {
-    console.log('received: %s', data);
-  });
+const wns = new WsNetServer()
+wns.bindWSS(wss)
 
-  ws.send('something');
-});
